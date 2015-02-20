@@ -30,7 +30,9 @@ $soap = new SoapClient(
 	array(
 		'authentication' => SOAP_AUTHENTICATION_BASIC,
 		'login' => $cfg->username,
-		'password' => $cfg->password
+		'password' => $cfg->password,
+		'cache_wsdl' => WSDL_CACHE_NONE,
+		'trace' => true,
 	)
 );
 
